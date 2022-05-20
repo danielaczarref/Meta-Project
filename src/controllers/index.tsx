@@ -1,0 +1,1 @@
+export { default as RegistrationController } from './Registration.controller'

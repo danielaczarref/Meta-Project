@@ -3,7 +3,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import {
   Login,
-  Loading
+  Loading,
+  Registration
 } from 'pages'
 
 const Routes: React.FC = () => (
@@ -11,7 +12,8 @@ const Routes: React.FC = () => (
     <Switch>
       <Route exact path="/login" component={Login} />
       <Route exact path='/loading' component={Loading} />
-      <Route path='*' component={Login} />
+      <Route exact path='/register' component={Registration} />
+      <Route path='*' component={Registration} />
     </Switch>
   </BrowserRouter>
 )
